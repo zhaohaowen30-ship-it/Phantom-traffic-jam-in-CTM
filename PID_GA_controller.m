@@ -153,7 +153,7 @@ function [total_congestion_duration, max_congestion_length, avg_congestion_lengt
 end
 
 
-%% ========== PID controller ==========
+%% PID function
 function [Q_i_all_updated, lock_cell_updated, integral_error_updated, prev_error_updated] = ...
     pid_controller(n_t, Q_i_all, Q_i, Kp, Ki, Kd, setpoint, lock_cell, integral_error, prev_error, lower_limit, upper_limit)
 
@@ -202,3 +202,4 @@ function [Q_i_all_updated, lock_cell_updated, integral_error_updated, prev_error
         end
     end
 end
+
